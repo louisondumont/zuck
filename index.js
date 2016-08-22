@@ -147,7 +147,7 @@ casper.options.onResourceReceived = function(C, response) {
         if(author !== config.userId)  send(answer(body), author, this);
         // messages I send in a conv to someone are sent from... me. In this case, reply not to me, but to my friend, if I mentionned @majordome only.
         else {
-          if(body.toLowerCase().indexOf('@majordome') !== -1) {
+          if(body.toLowerCase().indexOf('@zuck') !== -1) {
             send(answer(body), obj.ms[0].delta.messageMetadata.threadKey.otherUserFbId, this);
           }
         }
@@ -166,7 +166,7 @@ function answer(q) {
     answer += "Hi."
   if(q === ':)')
     answer += ':D'
-  if(q === '❤' || q === '<3' || q === '@peter ❤️')
+  if(q === '❤' || q === '<3' || q === '@zuck ❤️')
     answer += '<3'
   if(q.indexOf('how are you') !== -1)
     answer += "I'm doing great. ";
