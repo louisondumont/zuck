@@ -3,6 +3,8 @@ Zuck is a wrapper for Facebook Messenger. It can be used to build a bot on top o
 
 Code is not pretty, and so is this "documentation" (? ;-) ), I made this hack for my own needs and would be very happy to maintain it and make it cleaner if I see a raising interest.
 
+![screenshot](http://i.imgur.com/yQTNXlW.png "Demo Screenshot")
+
 # How does it work?
 Facebook doesn't provide an API for Messenger and reverse engineering the whole thing constantly would be so annoying for me. This is dirty but it works and it's all I need atm. Zuck uses a headless browser to log into your Fb account, then listen and reply to your messages using the function you defined.
 
